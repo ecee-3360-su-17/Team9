@@ -1,3 +1,3 @@
 # ECEN 3360
--John Kim
+-John Kim \n
 -Obaid Alqahtani
