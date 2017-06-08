@@ -8,7 +8,21 @@ int main(void)
 	return 0;
 }
 
-void blink(int n)
+void blink(int n){
+    char pattern = convert_to_morse(n);
+    for (int i=0; i<5; i++){
+        int state;
+        int modulo = 1;
+        for (int j=0; j<i+1; j++){
+            modulo *=2;
+        }
+        state=pattern%modulo;
+        state=state*2/modulo;
+        //SET LED
+        //WAIT bet. Digits
+    }
+    //LONG WAIT
+}
 
 char convert_to_morse(int n){
     switch(n){
@@ -19,31 +33,31 @@ char convert_to_morse(int n){
         return 0x01111;
         break;
     case 2:
-        return 0x11111;
+        return 0x00111;
         break;
     case 3:
-        print('dog');
+        return 0x00011;
         break;
     case 4:
-        print('dog');
+        return 0x00001;
         break;
     case 5:
-        print('dog');
+        return 0x00000;
         break;
     case 6:
-        print('dog');
+        return 0x10000;
         break;
     case 7:
-        print('dog');
+        return 0x11000;
         break;
     case 8:
-        print('dog');
+        return 0x11100;
         break;
     case 9:
-        print('dog');
+        return 0x11110;
         break;
     default:
-        print('wtf');
+        return 0x11111;
         break;
     }
 }
