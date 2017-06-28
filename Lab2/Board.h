@@ -37,55 +37,50 @@
 extern "C" {
 #endif
 
-#include "EK_TM4C1294XL.h"
+#include "EK_TM4C123GXL.h"
 
-#define Board_initEMAC              EK_TM4C1294XL_initEMAC
-#define Board_initGeneral           EK_TM4C1294XL_initGeneral
-#define Board_initGPIO              EK_TM4C1294XL_initGPIO
-#define Board_initI2C               EK_TM4C1294XL_initI2C
-#define Board_initPWM               EK_TM4C1294XL_initPWM
-#define Board_initSDSPI             EK_TM4C1294XL_initSDSPI
-#define Board_initSPI               EK_TM4C1294XL_initSPI
-#define Board_initUART              EK_TM4C1294XL_initUART
-#define Board_initUSB               EK_TM4C1294XL_initUSB
-#define Board_initUSBMSCHFatFs      EK_TM4C1294XL_initUSBMSCHFatFs
-#define Board_initWatchdog          EK_TM4C1294XL_initWatchdog
-#define Board_initWiFi              EK_TM4C1294XL_initWiFi
+#define Board_initDMA               EK_TM4C123GXL_initDMA
+#define Board_initGeneral           EK_TM4C123GXL_initGeneral
+#define Board_initGPIO              EK_TM4C123GXL_initGPIO
+#define Board_initI2C               EK_TM4C123GXL_initI2C
+#define Board_initPWM               EK_TM4C123GXL_initPWM
+#define Board_initSDSPI             EK_TM4C123GXL_initSDSPI
+#define Board_initSPI               EK_TM4C123GXL_initSPI
+#define Board_initUART              EK_TM4C123GXL_initUART
+#define Board_initUSB               EK_TM4C123GXL_initUSB
+#define Board_initWatchdog          EK_TM4C123GXL_initWatchdog
+#define Board_initWiFi              EK_TM4C123GXL_initWiFi
 
-#define Board_LED_ON                EK_TM4C1294XL_LED_ON
-#define Board_LED_OFF               EK_TM4C1294XL_LED_OFF
-#define Board_LED0                  EK_TM4C1294XL_D1
-#define Board_LED1                  EK_TM4C1294XL_D2
-#define Board_LED2                  EK_TM4C1294XL_D2
-#define Board_BUTTON0               EK_TM4C1294XL_USR_SW1
-#define Board_BUTTON1               EK_TM4C1294XL_USR_SW2
+#define Board_LED_ON                EK_TM4C123GXL_LED_ON
+#define Board_LED_OFF               EK_TM4C123GXL_LED_OFF
+#define Board_LED0                  EK_TM4C123GXL_LED_BLUE
+#define Board_LED1                  EK_TM4C123GXL_LED_GREEN
+#define Board_LED2                  EK_TM4C123GXL_LED_RED
+#define Board_BUTTON0               EK_TM4C123GXL_SW1
+#define Board_BUTTON1               EK_TM4C123GXL_SW2
 
-#define Board_I2C0                  EK_TM4C1294XL_I2C7
-#define Board_I2C1                  EK_TM4C1294XL_I2C8
-#define Board_I2C_TMP               EK_TM4C1294XL_I2C7
-#define Board_I2C_NFC               EK_TM4C1294XL_I2C7
-#define Board_I2C_TPL0401           EK_TM4C1294XL_I2C7
+#define Board_I2C0                  EK_TM4C123GXL_I2C0
+#define Board_I2C1                  EK_TM4C123GXL_I2C3
+#define Board_I2C_TMP               EK_TM4C123GXL_I2C3
+#define Board_I2C_NFC               EK_TM4C123GXL_I2C3
+#define Board_I2C_TPL0401           EK_TM4C123GXL_I2C3
 
-#define Board_PWM0                  EK_TM4C1294XL_PWM0
-#define Board_PWM1                  EK_TM4C1294XL_PWM0
+#define Board_PWM0                  EK_TM4C123GXL_PWM6
+#define Board_PWM1                  EK_TM4C123GXL_PWM7
 
-#define Board_SDSPI0                EK_TM4C1294XL_SDSPI0
-#define Board_SDSPI1                EK_TM4C1294XL_SDSPI1
+#define Board_SDSPI0                EK_TM4C123GXL_SDSPI0
 
-#define Board_SPI0                  EK_TM4C1294XL_SPI2
-#define Board_SPI1                  EK_TM4C1294XL_SPI3
+#define Board_SPI0                  EK_TM4C123GXL_SPI0
+#define Board_SPI1                  EK_TM4C123GXL_SPI3
 
-#define Board_USBMSCHFatFs0         EK_TM4C1294XL_USBMSCHFatFs0
+#define Board_USBDEVICE             EK_TM4C123GXL_USBDEVICE
 
-#define Board_USBHOST               EK_TM4C1294XL_USBHOST
-#define Board_USBDEVICE             EK_TM4C1294XL_USBDEVICE
+#define Board_UART0                 EK_TM4C123GXL_UART0
 
-#define Board_UART0                 EK_TM4C1294XL_UART0
+#define Board_WATCHDOG0             EK_TM4C123GXL_WATCHDOG0
 
-#define Board_WATCHDOG0             EK_TM4C1294XL_WATCHDOG0
-
-#define Board_WIFI                  EK_TM4C1294XL_WIFI
-#define Board_WIFI_SPI              EK_TM4C1294XL_SPI2
+#define Board_WIFI                  EK_TM4C123GXL_WIFI
+#define Board_WIFI_SPI              EK_TM4C123GXL_SPI2
 
 /* Board specific I2C addresses */
 #define Board_TMP006_ADDR           (0x40)
